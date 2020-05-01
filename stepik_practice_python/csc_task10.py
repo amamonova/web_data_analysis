@@ -1,8 +1,8 @@
 import pandas as pd
 
 if __name__ == '__main__':
-    df = pd.read_excel('trekking2.xlsx')
-    dairy = pd.read_excel('trekking2.xlsx', sheet_name='Раскладка')
+    df = pd.read_excel('data/trekking2.xlsx')
+    dairy = pd.read_excel('data/trekking2.xlsx', sheet_name='Раскладка')
     
     merged = pd.merge(dairy, df, right_on=['Unnamed: 0'],
                       left_on='Продукт')
